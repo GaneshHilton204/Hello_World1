@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Get to know about you.</title>
+</head>
+<body>
+	<h1>
+		<center>Enter your details.</center>
+	</h1>
+
+	<br>
+	<form>
+		<center>
+
+			<table style="width: 70%" border="3">
+				<tr>
+					<th>First Name</th>
+					<th><input type="text" onfocus="this.value=''" value=""
+						placeholder="Enter your first name." style="width: 500px;"
+						id="fName"></th>
+				</tr>
+
+				<tr>
+					<th>Last Name</th>
+					<th><input type="text" onfocus="this.value=''" value=""
+						placeholder="Enter your last name." style="width: 500px;"
+						id="lName"></th>
+				</tr>
+
+				<tr>
+					<th>Gender</th>
+					<th><input type="text" onfocus="this.value=''" value=""
+						placeholder="Enter your Gender." style="width: 500px;" id="gender"></th>
+				</tr>
+
+				<tr>
+					<th>Phone Number</th>
+					<th><input type="text" onfocus="this.value=''" value=""
+						placeholder="Enter your phone number." style="width: 500px;"
+						id="phoneNumber"></th>
+				</tr>
+
+				<tr>
+					<th>Email Id</th>
+					<th><input type="text" onfocus="this.value=''" value=""
+						placeholder="Enter your email id. " style="width: 500px;"
+						id="emailId"></th>
+				</tr>
+
+				<tr>
+					<th>Comments</th>
+					<th><input type="text" onfocus="this.value=''" value=""
+						placeholder="Enter what you are thinking. " style="width: 500px;"
+						id="comments"></th>
+				</tr>
+
+			</table>
+		</center>
+	</form>
+	<br>
+	<center>
+		<button onclick="myFunction()" type="submitt"
+			style="background-color: #4CAF50; border: none; color: white; padding: 16px 45px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;">Submitt</button>
+	</center>
+
+	<br>
+	<center>
+		<p id="details"></p>
+	</center>
+	<script>
+		function myFunction() {
+			document.getElementById("details").innerHTML = "Hello "
+					+ document.getElementById("fName").value + " "
+					+ document.getElementById("lName").value
+					+ ", thanks for visiting my page, I need to work on this page for good feel, look and so on. ";
+			document.getElementById("fName").value = "";
+			document.getElementById("lName").value = "";
+			document.getElementById("gender").value = "";
+			document.getElementById("phoneNumber").value = "";
+			document.getElementById("emailId").value = "";
+			document.getElementById("comments").value = "";
+			
+		}
+	</script>
+</body>
+</html>
